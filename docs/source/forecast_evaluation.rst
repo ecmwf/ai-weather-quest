@@ -465,7 +465,7 @@ Example evaluating an MJO forecast
    # compute global RPSS
    BSS = 1 - BS_fc/BS_clim
 
-Period-averaged BSSs are calculated as the mean of individual forecast BSS values over all forecast initialisation dates within the competitive period.
+Period-averaged BSSs are calculated by first averaging the forecast and climatological Brier Scores over all forecast initialisation dates within the competitive period, and then calculating the BSS from these period-averaged scores.
 
 Tropical storm days (TS)
 ---------------------------------------------------
